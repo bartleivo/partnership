@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advancing Accessibility Together - Guide Dogs + AudioEye</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Roboto', sans-serif; margin: 0; padding: 0; background-color: #f7f9fc; color: #333; }
+    header { background: #e6f0fa; color: #003366; padding: 30px 20px; text-align: center; }
+    .header-content { display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 10px; }
+    .header-content img { height: 40px; vertical-align: middle; }
+    nav { background: #0055a5; padding: 15px; text-align: center; }
+    nav a { margin: 0 20px; text-decoration: none; color: white; font-weight: 700; }
+    section { padding: 60px 20px; max-width: 1000px; margin: auto; background: white; margin-top: 20px; border-radius: 10px; box-shadow: 0px 0px 10px rgba(0,0,0,0.1); }
+    section h2 { font-size: 32px; color: #003366; margin-bottom: 20px; }
+    section p, section ul, section ol { font-size: 18px; line-height: 1.6; }
+    .cta-button { background: #00aaff; color: white; padding: 15px 30px; border-radius: 8px; font-size: 18px; font-weight: bold; text-decoration: none; display: inline-block; margin-top: 30px; }
+    footer { background: #e6f0fa; text-align: center; padding: 30px; color: #003366; margin-top: 40px; font-size: 16px; }
+    form input, form select, form textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #ccc; border-radius: 6px; font-size: 16px; }
+    form button { background: #00aaff; color: white; padding: 15px 30px; border: none; border-radius: 8px; font-size: 18px; font-weight: bold; cursor: pointer; width: 100%; }
+    form button:hover { background: #0077cc; }
+    @media (max-width: 600px) {
+      .header-content { flex-direction: column; }
+      .header-content img { height: 30px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Advancing Accessibility Together</h1>
+  <div class="header-content">
+    <a href="https://www.guidedogs.com/" target="_blank">
+      <img src="https://i.imgur.com/wyh2kNw.jpg" alt="Guide Dogs for the Blind Logo">
+    </a>
+    <span>Guide Dogs for the Blind &nbsp;&nbsp;&nbsp;</span>
+    <a href="https://www.audioeye.com/" target="_blank">
+      <img src="https://i.imgur.com/0pvF1QA.png" alt="AudioEye Logo">
+    </a>
+    <span>&nbsp;&nbsp;&nbsp;AudioEye</span>
+  </div>
+</header>
+
+<nav>
+  <a href="#how-it-works">How It Works</a>
+  <a href="#why-it-matters">Why It Matters</a>
+  <a href="#nominate">Nominate</a>
+</nav>
+
+<section>
+  <h2>Make Your Workplace a Leader in Digital Accessibility</h2>
+  <p>Raise money for Guide Dogs for the Blind, all while creating real-world change by advocating for digital inclusion in your workplace.</p>
+  <a href="#nominate" class="cta-button">Nominate Your Workplace</a>
+</section>
+
+<section id="how-it-works">
+  <h2>How It Works</h2>
+  <ol>
+    <li>Nominate your company.</li>
+    <li>AudioEye performs a free digital accessibility audit.</li>
+    <li>Audit results are emailed next week with a template on how to best share with your company.</li>
+    <li>If your company partners with AudioEye we’ll donate $100 to Guide Dogs for the Blind in your name!</li>
+  </ol>
+</section>
+
+<section id="why-it-matters">
+  <h2>Why It Matters</h2>
+  <ul>
+    <li>1 in 4 U.S. adults lives with a disability.</li>
+    <li>Over 70% of websites have accessibility barriers.</li>
+    <li>Accessibility boosts business and community inclusion.</li>
+    <li>Minimize risk and maximize compliance with a comprehensive accessibility solution .</li>
+  </ul>
+</section>
+
+<section id="nominate">
+  <h2>Nominate Your Workplace</h2>
+  <form onsubmit="event.preventDefault(); alert('✅ Thank you for your nomination! We will contact you soon.'); this.reset();">
+    <input type="text" placeholder="Your Full Name" required>
+    <input type="email" placeholder="Your Email Address" required>
+    <input type="text" placeholder="Company Name" required>
+    <input type="url" placeholder="Company Website URL" required>
+    <select required>
+      <option value="">Your Role/Connection</option>
+      <option value="employee">Employee</option>
+      <option value="volunteer">Volunteer</option>
+      <option value="vendor">Vendor</option>
+      <option value="other">Other</option>
+    </select>
+    <textarea placeholder="Why Accessibility Matters to You (Optional)"></textarea>
+    <button type="submit">Submit Nomination</button>
+  </form>
+</section>
+
+<footer>
+  <p>Together, we’re building a world where everyone can navigate freely.</p>
+</footer>
+
+</body>
+</html>
